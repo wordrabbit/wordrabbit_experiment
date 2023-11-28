@@ -37,3 +37,4 @@ tmp
 */storage/*.sqlite3*
 */log/*.log
 */config/master.key
+*/node_modules

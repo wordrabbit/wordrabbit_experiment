@@ -51,6 +51,8 @@ class CrawlingService < ApplicationService
     ahrefs.each do |ahref|
       url = ahref.attr("href")
       next if url.blank?
+      url = url.gsub(site.url, "/")
+
       # 同じドメイン内のみを対象とする
       next if url[0] != "/"
       # トップページも不要

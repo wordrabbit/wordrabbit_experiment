@@ -10,12 +10,12 @@ class DisplayAlertService < ApplicationService
 
       code = improvement["code"]
       # 以下の3つの修正だけ表示します。
-      permits = [
-        "PARTICLE_INCORRECT", # 助詞の誤り
-        "INCORRECT_TYPO", # 誤字
-        "GRAMMAR_TARI" # たり抜け
-      ]
-      next unless permits.include?(code)
+      # permits = [
+      #   "PARTICLE_INCORRECT", # 助詞の誤り
+      #   "INCORRECT_TYPO", # 誤字
+      #   "GRAMMAR_TARI" # たり抜け
+      # ]
+      # next unless permits.include?(code)
 
 
       # 修正箇所をハイライトする
