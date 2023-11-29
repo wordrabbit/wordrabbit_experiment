@@ -18,8 +18,6 @@ Grover.configure do |config|
     vision_deficiency: 'deuteranopia',
     extra_http_headers: { 'Accept-Language': 'en-US' },
     geolocation: { latitude: 59.95, longitude: 30.31667 },
-    focus: '#some-element',
-    hover: '#another-element',
     cache: false,
     timeout: 0, # Timeout in ms. A value of `0` means 'no timeout'
     request_timeout: 1000, # Timeout when fetching the content (overloads the `timeout` option)

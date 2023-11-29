@@ -2,5 +2,5 @@
 <p>
   画像テスト
   <br />
-  <img src="http://www.google.co.jp/intl/ja_ALL/images/logo.gif" />
+  <%= image_tag "data:image/png;base64,#{Base64.encode64(File.read(Rails.root.join('public/test.png')))}" %>
 </p>
